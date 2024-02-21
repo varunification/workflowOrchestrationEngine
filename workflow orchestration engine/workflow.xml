@@ -1,0 +1,13 @@
+﻿<Activities>
+	<Activity Name="UpdateDatabase" Description="Updates the database with new schema" Critical="true" Enabled="true" Rollback="false">
+		<Parameters>
+			<SleepPeriodInMilliseconds>5000</SleepPeriodInMilliseconds>
+		</Parameters>
+	</Activity>
+	<Activity Name="DeployCode" Description="Deploys code to production servers" Critical="false" Enabled="true" Rollback="true">
+		<Parameters>
+			<SleepPeriodInMilliseconds>2000</SleepPeriodInMilliseconds>
+		</Parameters>
+	</Activity>
+	<!-- More Activity elements can be added here -->
+</Activities>
